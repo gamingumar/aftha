@@ -4,7 +4,7 @@
  * File Created: Thursday, 29th August 2019 6:31:10 pm
  * Author: Umar Aamer (umaraamer@gmail.com)
  * -----
- * Last Modified: Friday, 30th August 2019 1:53:24 am
+ * Last Modified: Friday, 30th August 2019 2:00:04 am
  * -----
  * Copyright 2019 - 2019 WhileGeek, https://umar.tech
  */
@@ -17,7 +17,7 @@ import Axios from "axios";
 const { Title, Text } = Typography;
 
 export const One = props => {
-  const [text, setText] = useState("https://www.gamingumar.com");
+  const [text, setText] = useState("https://www.placeholder.com");
 
   const {url, response, sendUrlToC2, updateResponse} = props;
 
