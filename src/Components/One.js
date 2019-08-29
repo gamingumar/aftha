@@ -4,7 +4,7 @@
  * File Created: Thursday, 29th August 2019 6:31:10 pm
  * Author: Umar Aamer (umaraamer@gmail.com)
  * -----
- * Last Modified: Friday, 30th August 2019 1:49:59 am
+ * Last Modified: Friday, 30th August 2019 1:53:24 am
  * -----
  * Copyright 2019 - 2019 WhileGeek, https://umar.tech
  */
@@ -21,6 +21,8 @@ export const One = props => {
 
   const {url, response, sendUrlToC2, updateResponse} = props;
 
+  const [loading, setLoading] = useState(false)
+
   useEffect(() => {
     if (url !== "") {
       setText(url);
@@ -28,6 +30,7 @@ export const One = props => {
   }, [url]);
 
   const _fetchData = async () => {
+    setLoading(true);
     let urlText = `${text}`;
     try {
       let response = await Axios.get(urlText);
@@ -39,6 +42,8 @@ export const One = props => {
     } catch (e) {
       alert(e.message)
     }
+
+    setLoading(false);
     
   };
 
@@ -73,6 +78,7 @@ export const One = props => {
 
         <Col span={6}>
           <Button type="danger" size="large"
+          loading={loading}
           onClick={_fetchData}
           >
             Call API
