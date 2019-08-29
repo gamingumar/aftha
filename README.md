@@ -12,6 +12,10 @@ yarn start
 
 - Disable CORS from safari develop menu to test in localhost
 
+
+![Alt text](/screenshot.png?raw=true "Optional Title")
+
+
 ## Description
 
 2 functional components.
