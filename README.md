@@ -8,6 +8,10 @@ yarn
 yarn start
 ```
 
+### CORS
+
+- Disable CORS from safari develop menu to test in localhost
+
 ## Description
 
 2 functional components.
