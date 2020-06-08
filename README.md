@@ -1,5 +1,4 @@
-# aftha
-React JS app
+React JS app component data syncing example.
 
 ## Installation
 ```
